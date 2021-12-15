@@ -1,47 +1,51 @@
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
+  background: url(assets/pink_rice.png) repeat 0 0;
 }
 
 .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
-  }
-
-  .lead {
-      text-align: left;
-  }
-
-  .image-fluid {
-    max-width: 100%;
-    height: auto
-  }
-
-  .btn-sm {
-    margin-right: 10px;
-  }
-
-.btn-info {
-  height:max-content
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.lead {
+  text-align: left;
+}
+
+.image-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn-sm {
+  margin-right: 10px;
+}
+
+.btn-info {
+  height: max-content;
+}
+
+.btn-light i {
+  margin-right: 8px;
+}
+
+.card-title i {
+  margin-left: 10px;
+}
 
 .navbar-brand {
   margin-left: auto;
   cursor: pointer;
-}
-
-.card-title {
-  font-weight: 700;
 }
 
 .nav-item {
@@ -85,19 +89,30 @@ body {
   text-align: center;
 }
 
-body {
-  background-color: #F3E0DC;
-}
-
 .navbar.navbar-dark.bg-dark.shadow-sm {
-  background-color: #5C2018 !important;
+  background-color: #5c2018 !important;
 }
 
 #navbarHeader.collapse.bg-dark {
-  background-color: #5C2018 !important;
+  background-color: #5c2018 !important;
 }
 
 .img-fluid {
   max-height: 30%;
   text-align: right;
+}
+
+.header-text,
+button,
+h2,
+.nav-link,
+.navbar-brand,
+.card-title,
+.list-focus {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+}
+
+.list-focus {
+  font-size: larger;
 }
