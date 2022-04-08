@@ -1,7 +1,7 @@
 body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  background: url(assets/pink_rice.png) repeat 0 0;
+  background: url('../public/pink_rice.png') repeat 0 0;
 }
 
 .bd-placeholder-img {
@@ -86,7 +86,7 @@ body {
   text-align: right;
 }
 
-.project-header {
+.project-header, .header-text {
   text-align: center;
 }
 
@@ -165,4 +165,8 @@ h2,
 .flip-card-title {
   font-size: xx-large;
   margin-top: 1em;
+}
+
+.project-btn {
+  padding-right:8px
 }
