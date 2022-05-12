@@ -9,12 +9,13 @@ function Home() {
       <div className='row py-lg-5'>
         <div className='col-lg-6 col-md-8 mx-auto'>
           <div style={{ marginTop: '5rem' }}>
-          <h1 className='header-text'>Welcome</h1>
-          <p style={{ textAlign: 'center', fontSize: 'xx-large' }}>
-            I'm so glad you're here! <br/>I'm Emily Lubkert and I'm a full-stack
-            developer. <br/>Check out my projects to see my skills in action. Contact
-            me and let me know what you think.
-          </p>
+            <h1 className='header-text'>Welcome</h1>
+            <p style={{ textAlign: 'center', fontSize: 'xx-large' }}>
+              I'm so glad you're here! <br />
+              I'm Emily Lubkert and I'm a full-stack developer. <br />
+              Check out my projects to see my skills in action. Contact me and
+              let me know what you think.
+            </p>
           </div>
         </div>
         <div className='col-lg-6 col-md-8'>
@@ -36,48 +37,50 @@ function Home() {
               </ListGroupItem>
             </ListGroup>
           </Card>
-          <h3 className='header-text' style={{ marginTop: '.5rem' }}>Other Skills + Tools</h3>
+          <h3 className='header-text' style={{ marginTop: '.5rem' }}>
+            Other Skills + Tools
+          </h3>
           <div className='skills-group'>
-          <Card>
-            <ListGroup style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}variant='flush'>
-              <ListGroupItem style={{ textAlign: 'center' }}>
-                Write & document APIs
-              </ListGroupItem>
-              <ListGroupItem style={{ textAlign: 'center' }}>
-                AWS
-              </ListGroupItem>
-              <ListGroupItem style={{ textAlign: 'center' }}>
-                Docker
-              </ListGroupItem>
-              <ListGroupItem style={{ textAlign: 'center' }}>
-                Firebase
-              </ListGroupItem>
-              <ListGroupItem style={{ textAlign: 'center' }}>
-                Formik
-              </ListGroupItem>
-              <ListGroupItem style={{ textAlign: 'center' }}>
-                Git/GitHub
-              </ListGroupItem>
-              <ListGroupItem style={{ textAlign: 'center' }}>
-                GraphQL
-              </ListGroupItem>
-              <ListGroupItem style={{ textAlign: 'center' }}>
-                Heroku
-              </ListGroupItem>
-              <ListGroupItem style={{ textAlign: 'center' }}>
-                Mongoose
-              </ListGroupItem>
-              <ListGroupItem style={{ textAlign: 'center' }}>
-                Postman
-              </ListGroupItem>
-              <ListGroupItem style={{ textAlign: 'center' }}>
-                Strapi
-              </ListGroupItem>
-              <ListGroupItem style={{ textAlign: 'center' }}>
-                Swagger
-              </ListGroupItem>
-            </ListGroup>
-          </Card>
+            <Card>
+              <ListGroup
+                style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}
+                variant='flush'
+              >
+                <ListGroupItem style={{ textAlign: 'center' }}>
+                  Write & document RESTful APIs
+                </ListGroupItem>
+                <ListGroupItem style={{ textAlign: 'center' }}>
+                  AWS
+                </ListGroupItem>
+                <ListGroupItem style={{ textAlign: 'center' }}>
+                  Docker
+                </ListGroupItem>
+                <ListGroupItem style={{ textAlign: 'center' }}>
+                  Firebase
+                </ListGroupItem>
+                <ListGroupItem style={{ textAlign: 'center' }}>
+                  Formik
+                </ListGroupItem>
+                <ListGroupItem style={{ textAlign: 'center' }}>
+                  Git/GitHub
+                </ListGroupItem>
+                <ListGroupItem style={{ textAlign: 'center' }}>
+                  GraphQL
+                </ListGroupItem>
+                <ListGroupItem style={{ textAlign: 'center' }}>
+                  Heroku
+                </ListGroupItem>
+                <ListGroupItem style={{ textAlign: 'center' }}>
+                  Mongoose
+                </ListGroupItem>
+                <ListGroupItem style={{ textAlign: 'center' }}>
+                  Postman
+                </ListGroupItem>
+                <ListGroupItem style={{ textAlign: 'center' }}>
+                  Strapi
+                </ListGroupItem>
+              </ListGroup>
+            </Card>
           </div>
         </div>
       </div>
@@ -86,7 +89,7 @@ function Home() {
         <ProjectCard
           image='./oinc-logo.png'
           title='OIN¢'
-          description='OIN¢ is a simple tracking app that kids and their parents can use to keep track of the money coming in and out.'
+          description='OIN¢ is a full stack money tracking app that kids and their parents can use to keep track of the money coming in and out.'
           launchlink='https://emily-lubkert-fullstackbankapp.herokuapp.com/'
           githublink='https://github.com/emilylubkert/Oinc-Full-Stack-Banking-App'
         />
@@ -96,6 +99,12 @@ function Home() {
           description='Real-time transit data from the MBTA is shown on a map of Boston. Users can input a bus route and view the current location of each active bus on that route, updated every 5 seconds.'
           launchlink='https://emilylubkert.github.io/Real-Time-Bus-Tracker/'
           githublink='https://github.com/emilylubkert/Real-Time-Bus-Tracker'
+        />
+        <ProjectCard
+          image='./rest-app.png'
+          title='Full Stack Restaurant App'
+          description='A mock restaurant ordering app built with NextJS, Stripe, and Strapi. A user can log in, add items from 3 different restaurants to a cart, and order with Stripe using test payment settings/information.'
+          githublink='https://github.com/emilylubkert/full-stack-restaurant-app'
         />
       </div>
     </>
