@@ -5,8 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 import Home from './components/Home';
-import Projects from './components/Projects';
-import NavBar from './components/NavBar';
 import ContactNav from './components/ContactNav';
 
 function App() {
@@ -17,7 +15,6 @@ function App() {
           <div className='container' style={{ padding: '20px' }}>
             <Routes>
               <Route path='/' exact element={<Home />} />
-              <Route path='/projects/' element={<Projects />} />
               <Route path='*' exact element={<h4>Page Not Found</h4>} />
             </Routes>
           </div>

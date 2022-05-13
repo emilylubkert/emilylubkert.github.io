@@ -2,17 +2,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import { Button, Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 import ProjectCard from './ProjectCard';
+import Bio from './Bio'
 
 function Home() {
   return (
     <>
       <div className='row py-lg-5'>
-        <div className='col-lg-6 col-md-8 mx-auto'>
+      <h1 className='name-header'>Emily Lubkert, full stack developer</h1>
+        <div className='col-lg-6 col-md-8 mx-auto' style={{ display: 'flex', alignItems: 'flex-start' }}>
           <div style={{ marginTop: '5rem' }}>
             <h1 className='header-text'>Welcome</h1>
             <p style={{ textAlign: 'center', fontSize: 'xx-large' }}>
               I'm so glad you're here! <br />
-              I'm Emily Lubkert and I'm a full-stack developer. <br />
+              {/* I'm Emily Lubkert and I'm a full-stack developer. <br /> */}
               Check out my projects to see my skills in action. Contact me and
               let me know what you think.
             </p>
@@ -23,21 +25,21 @@ function Home() {
           <h2 className='header-text'>MERN Stack</h2>
           <Card>
             <ListGroup variant='flush'>
-              <ListGroupItem style={{ textAlign: 'center' }}>
+              <ListGroupItem style={{ fontSize: 'x-large', textAlign: 'center' }}>
                 MongoDB
               </ListGroupItem>
-              <ListGroupItem style={{ textAlign: 'center' }}>
+              <ListGroupItem style={{ fontSize: 'x-large', textAlign: 'center' }}>
                 Express
               </ListGroupItem>
-              <ListGroupItem style={{ textAlign: 'center' }}>
+              <ListGroupItem style={{ fontSize: 'x-large', textAlign: 'center' }}>
                 ReactJS
               </ListGroupItem>
-              <ListGroupItem style={{ textAlign: 'center' }}>
+              <ListGroupItem style={{ fontSize: 'x-large',textAlign: 'center' }}>
                 Node.js
               </ListGroupItem>
             </ListGroup>
           </Card>
-          <h3 className='header-text' style={{ marginTop: '.5rem' }}>
+          <h3 className='header-text' style={{ margin: '20px 0 10px' }}>
             Other Skills + Tools
           </h3>
           <div className='skills-group'>
@@ -107,6 +109,7 @@ function Home() {
           githublink='https://github.com/emilylubkert/full-stack-restaurant-app'
         />
       </div>
+      <Bio/>
     </>
   );
 }
