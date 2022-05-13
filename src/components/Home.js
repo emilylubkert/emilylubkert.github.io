@@ -1,6 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
-import { Button, Card, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 import ProjectCard from './ProjectCard';
 import Bio from './Bio'
 
@@ -14,9 +12,8 @@ function Home() {
             <h1 className='header-text'>Welcome</h1>
             <p style={{ textAlign: 'center', fontSize: 'xx-large' }}>
               I'm so glad you're here! <br />
-              {/* I'm Emily Lubkert and I'm a full-stack developer. <br /> */}
-              Check out my projects to see my skills in action. Contact me and
-              let me know what you think.
+              Check out my projects to see my skills in action. <br />
+              Contact me and let me know what you think.
             </p>
           </div>
         </div>
