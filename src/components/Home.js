@@ -3,6 +3,7 @@ import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import { Button, Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 import ProjectCard from './ProjectCard';
 import Bio from './Bio'
+import Content from './Content';
 
 function Home() {
   return (
@@ -109,6 +110,7 @@ function Home() {
           githublink='https://github.com/emilylubkert/full-stack-restaurant-app'
         />
       </div>
+      <Content/>
       <Bio/>
     </>
   );
