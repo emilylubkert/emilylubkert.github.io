@@ -1,6 +1,6 @@
 # Coding Portfolio
 ## Description
-This website serves as a portfolio for my work as a student in MIT xPro's Professional Certificate in Coding, a full stack development program. My app is built with React and hosted on Github Pages.
+This website serves as a portfolio for my work as a full-stack developer. My app is built with React and hosted on Github Pages.
 
 ## How to Run
 My portfolio can be accessed [here](https://emilylubkert.github.io/).
