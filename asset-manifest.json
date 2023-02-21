@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.be0e07bb.css",
-    "main.js": "/static/js/main.a38ec214.js",
-    "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
-    "static/media/pink_rice.png": "/static/media/pink_rice.af9475f77f098df55290.png",
+    "main.css": "/static/css/main.533918c2.css",
+    "main.js": "/static/js/main.ba6401ee.js",
     "index.html": "/index.html",
-    "main.be0e07bb.css.map": "/static/css/main.be0e07bb.css.map",
-    "main.a38ec214.js.map": "/static/js/main.a38ec214.js.map",
-    "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
+    "main.533918c2.css.map": "/static/css/main.533918c2.css.map",
+    "main.ba6401ee.js.map": "/static/js/main.ba6401ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.be0e07bb.css",
-    "static/js/main.a38ec214.js"
+    "static/css/main.533918c2.css",
+    "static/js/main.ba6401ee.js"
   ]
 }
