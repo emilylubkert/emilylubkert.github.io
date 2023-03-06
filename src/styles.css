@@ -24,10 +24,10 @@ body {
   text-align: left;
 }
 
-.image-fluid {
+/* .image-fluid {
   max-width: 100%;
   height: auto;
-}
+} */
 
 .btn-sm {
   margin-right: 10px;
@@ -101,7 +101,7 @@ body {
 }
 
 .img-fluid {
-  max-height: 30%;
+  max-height: 100%;
   text-align: right;
 }
 

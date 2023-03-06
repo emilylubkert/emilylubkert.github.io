@@ -1,5 +1,5 @@
 
-import { Navbar, Container, Offcanvas, Nav, Image } from 'react-bootstrap';
+import { Navbar, Container, Offcanvas, Nav } from 'react-bootstrap';
 
 import '../styles.css';
 import '../components.css'
@@ -19,7 +19,6 @@ function ContactNav() {
       >
         <Offcanvas.Header closeButton>
           <Offcanvas.Title id="offcanvasNavbarLabel">Hi!</Offcanvas.Title>
-          <Image fluid style={{maxHeight: '80%'}} rounded src="/desk_photo.jpg" alt="Emily at desk"/>
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Nav className="justify-content-end flex-grow-1 pe-3">

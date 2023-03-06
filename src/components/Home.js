@@ -1,33 +1,73 @@
+import Image from 'react-bootstrap/Image';
 import Card from 'react-bootstrap/Card';
-import  ListGroup  from 'react-bootstrap/ListGroup';
+import ListGroup from 'react-bootstrap/ListGroup';
 import ProjectCard from './ProjectCard';
-import Bio from './Bio'
+import Bio from './Bio';
 
 function Home() {
-  const articleLink1 = 'https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/'
-  const articleLink2 = 'https://medium.com/javascript-in-plain-english/coding-wont-exist-in-5-years-this-is-why-6da748ba676c'
-  const articleLink3 = 'https://kappanonline.org/de-escalating-dataveillance-in-schools-nichols-monea/?utm_source=PDK+International&utm_campaign=70c5f44748-Kappan_Newsletter_Lapsed_2_25_2020_COPY_01&utm_medium=email&utm_term=0_867590cd6a-70c5f44748-34897089&mc_cid=70c5f44748&mc_eid=23276d0b4d'
-  const updateMonth = 'February 2023';
+  const articleLink1 =
+    'https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/';
+  const articleLink2 =
+    'https://medium.com/javascript-in-plain-english/coding-wont-exist-in-5-years-this-is-why-6da748ba676c';
+  const articleLink3 =
+    'https://kappanonline.org/de-escalating-dataveillance-in-schools-nichols-monea/?utm_source=PDK+International&utm_campaign=70c5f44748-Kappan_Newsletter_Lapsed_2_25_2020_COPY_01&utm_medium=email&utm_term=0_867590cd6a-70c5f44748-34897089&mc_cid=70c5f44748&mc_eid=23276d0b4d';
+
+  const date = new Date();
+  const month = new Intl.DateTimeFormat('en-US', { month: 'long' }).format(
+    date
+  );
+  const year = date.getFullYear();
+  const updateMonth = `${month} ${year}`;
   return (
     <>
       <div className='row py-lg-5'>
-      <h1 className='name-header'>Emily Lubkert, Full Stack Developer</h1>
-        <div className='col-lg-6 col-md-8 mx-auto' style={{ display: 'flex', alignItems: 'center' }}>
+        <div className='header-container'>
+          {/* <img className='image' src='./desk_photo.jpg' alt='Emily at desk' /> */}
+          <Image fluid rounded src="/desk_photo.jpg" alt="Emily at desk"/>
+          <h1 className='name-header'>Emily Lubkert, Full Stack Developer</h1>
+        </div>
+        <div
+          className='col-lg-6 col-md-8 mx-auto'
+          style={{ display: 'flex', alignItems: 'center' }}
+        >
           <div style={{ marginTop: '5rem' }}>
-            <Card style={{ textAlign: 'center', fontSize: 'x-large', background: 'none', border: 'none' }}>
+            <Card
+              style={{
+                textAlign: 'center',
+                fontSize: 'x-large',
+                background: 'none',
+                border: 'none',
+              }}
+            >
               <Card.Body>
-              <Card.Title>Welcome!</Card.Title>
-              I'm so glad you're here! <br />
-              Check out my projects to see my skills in action. <br />
-              Contact me and let me know what you think.
+                <Card.Title>Welcome!</Card.Title>
+                I'm so glad you're here! <br />
+                Check out my projects to see my skills in action. <br />
+                Contact me and let me know what you think.
               </Card.Body>
             </Card>
-            <Card style={{ marginTop:'3rem', textAlign: 'center', fontSize: 'large', background: 'none', border: 'none' }}>
+            <Card
+              style={{
+                marginTop: '3rem',
+                textAlign: 'center',
+                fontSize: 'large',
+                background: 'none',
+                border: 'none',
+              }}
+            >
               <Card.Body>
-              <Card.Title>{updateMonth}: Click to see what I've been reading...</Card.Title>
-              <Card.Link href={articleLink1}>What Is ChatGPT Doing … and Why Does It Work?</Card.Link>
-              <Card.Link href={articleLink2}>Coding Won’t Exist In 5 Years. This Is Why</Card.Link>
-              <Card.Link href={articleLink3}>De-escalating ‘dataveillance’ in schools</Card.Link>
+                <Card.Title>
+                  {updateMonth}: Click to see what I've been reading...
+                </Card.Title>
+                <Card.Link href={articleLink1}>
+                  What Is ChatGPT Doing … and Why Does It Work?
+                </Card.Link>
+                <Card.Link href={articleLink2}>
+                  Coding Won’t Exist In 5 Years. This Is Why
+                </Card.Link>
+                <Card.Link href={articleLink3}>
+                  De-escalating ‘dataveillance’ in schools
+                </Card.Link>
               </Card.Body>
             </Card>
           </div>
@@ -37,16 +77,24 @@ function Home() {
           <h2 className='header-text'>MERN Stack</h2>
           <Card className='card--skills'>
             <ListGroup variant='flush'>
-              <ListGroup.Item style={{ fontSize: 'x-large', textAlign: 'center' }}>
+              <ListGroup.Item
+                style={{ fontSize: 'x-large', textAlign: 'center' }}
+              >
                 MongoDB
               </ListGroup.Item>
-              <ListGroup.Item style={{ fontSize: 'x-large', textAlign: 'center' }}>
+              <ListGroup.Item
+                style={{ fontSize: 'x-large', textAlign: 'center' }}
+              >
                 Express
               </ListGroup.Item>
-              <ListGroup.Item style={{ fontSize: 'x-large', textAlign: 'center' }}>
+              <ListGroup.Item
+                style={{ fontSize: 'x-large', textAlign: 'center' }}
+              >
                 ReactJS
               </ListGroup.Item>
-              <ListGroup.Item style={{ fontSize: 'x-large',textAlign: 'center' }}>
+              <ListGroup.Item
+                style={{ fontSize: 'x-large', textAlign: 'center' }}
+              >
                 Node.js
               </ListGroup.Item>
             </ListGroup>
@@ -130,7 +178,7 @@ function Home() {
           githublink='https://github.com/emilylubkert/full-stack-restaurant-app'
         />
       </div>
-      <Bio/>
+      <Bio />
     </>
   );
 }
