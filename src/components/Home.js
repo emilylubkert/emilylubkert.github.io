@@ -5,13 +5,21 @@ import ProjectCard from './ProjectCard';
 import Bio from './Bio';
 
 function Home() {
-  const articleLink1 =
-    'https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/';
-  const articleLink2 =
-    'https://medium.com/javascript-in-plain-english/coding-wont-exist-in-5-years-this-is-why-6da748ba676c';
-  const articleLink3 =
-    'https://kappanonline.org/de-escalating-dataveillance-in-schools-nichols-monea/?utm_source=PDK+International&utm_campaign=70c5f44748-Kappan_Newsletter_Lapsed_2_25_2020_COPY_01&utm_medium=email&utm_term=0_867590cd6a-70c5f44748-34897089&mc_cid=70c5f44748&mc_eid=23276d0b4d';
 
+  const articles = [
+    {
+      title: '10 Essential Patterns for C# and .NET Development',
+      url: 'https://maherz.medium.com/10-essential-patterns-for-c-and-net-development-e9b881b9a6ba#id_token=eyJhbGciOiJSUzI1NiIsImtpZCI6ImFjZGEzNjBmYjM2Y2QxNWZmODNhZjgzZTE3M2Y0N2ZmYzM2ZDExMWMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJuYmYiOjE2ODExNjA3MzIsImF1ZCI6IjIxNjI5NjAzNTgzNC1rMWs2cWUwNjBzMnRwMmEyamFtNGxqZGNtczAwc3R0Zy5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsInN1YiI6IjExNzQ0ODM1OTU0ODM2OTgxODcwNyIsImVtYWlsIjoiZWx1YmtlcnRAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF6cCI6IjIxNjI5NjAzNTgzNC1rMWs2cWUwNjBzMnRwMmEyamFtNGxqZGNtczAwc3R0Zy5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsIm5hbWUiOiJFbWlseSBMdWJrZXJ0IiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FHTm15eGFyQV9TZTM4S1JGWGVxQU1qa3VxbngyVGVwaDI1QjNEbFFUMHhjZHc9czk2LWMiLCJnaXZlbl9uYW1lIjoiRW1pbHkiLCJmYW1pbHlfbmFtZSI6Ikx1YmtlcnQiLCJpYXQiOjE2ODExNjEwMzIsImV4cCI6MTY4MTE2NDYzMiwianRpIjoiYTNiY2E2NmUwZjFhNWQ3Y2I1M2QyNmRkYzFkZWFiODFiOTJjYzQ0ZSJ9.EzG_XBzhzMqvvGMi_-XEosHg59fCQrJ-F_CUVKu0MG_xp_Ci0QbYUUzvcjSyLdxsYdg4avLLG7Xr9qjrBqwKzsV1wvPpeHc0UDUXiOXIeWxiqUPLVdTY59h4r51B-2SHP_KEaauMthc6VLSJo6GDbayOpFmZzeTcijhDms78c3-Tc1Yu4K1oc0jHca_ORs85JvUW1uYHnwB_RB5FirPTDgh89nTASDi3HKzZh7QGOs9pY06zidfvw8G39jfIKYbu8EnS3WsWh5TfneuLjoQN4lDY8yEienLtQcohPrZQXrY3vKB-NEGdxiLH1KD0Fhr3T6xEhBzirVlTnvY5b05KCA'
+    },
+    {
+      title: 'Advice From a Software Engineer With 8 Years of Experience',
+      url: 'https://medium.com/better-programming/advices-from-a-software-engineer-with-8-years-of-experience-8df5111d4d55'
+    },
+    {
+      title: 'Why I work remotely (hint: it has nothing to do with productivity).',
+      url: 'https://medium.com/signal-v-noise/why-i-work-remotely-hint-it-has-nothing-to-do-with-productivity-34ace30f74fc'
+    }
+  ]
   const date = new Date();
   const month = new Intl.DateTimeFormat('en-US', { month: 'long' }).format(
     date
@@ -23,7 +31,7 @@ function Home() {
       <div className='row py-lg-5'>
         <div className='header-container'>
           {/* <img className='image' src='./desk_photo.jpg' alt='Emily at desk' /> */}
-          <Image fluid rounded src="/desk_photo.jpg" alt="Emily at desk"/>
+          <Image fluid rounded src="/desk_photo.jpg" alt="Emily at desk" />
           <h1 className='name-header'>Emily Lubkert, Full Stack Developer</h1>
         </div>
         <div
@@ -59,15 +67,15 @@ function Home() {
                 <Card.Title>
                   {updateMonth}: Click to see what I've been reading...
                 </Card.Title>
-                <Card.Link href={articleLink1}>
-                  What Is ChatGPT Doing … and Why Does It Work?
-                </Card.Link>
-                <Card.Link href={articleLink2}>
-                  Coding Won’t Exist In 5 Years. This Is Why
-                </Card.Link>
-                <Card.Link href={articleLink3}>
-                  De-escalating ‘dataveillance’ in schools
-                </Card.Link>
+                {
+                  articles.map((item, index) => {
+                    return (
+                      <Card.Link key={index} href={item.url}>
+                        {item.title}
+                      </Card.Link>
+                    )
+                  })
+                }
               </Card.Body>
             </Card>
           </div>
