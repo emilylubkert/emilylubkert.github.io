@@ -81,32 +81,49 @@ function Home() {
           </div>
         </div>
         <div className='col-lg-6 col-md-8'>
-          <h1 className='header-text'>My Skills</h1>
-          <h2 className='header-text'>MERN Stack</h2>
-          <Card className='card--skills'>
-            <ListGroup variant='flush'>
-              <ListGroup.Item
-                style={{ fontSize: 'x-large', textAlign: 'center' }}
+          <h1 className='header-text'>Primary Languages</h1>
+          <div className='skills-group'>
+            <Card className='card--skills'>
+              <ListGroup
+                style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}
+                variant='flush'
               >
-                MongoDB
-              </ListGroup.Item>
-              <ListGroup.Item
-                style={{ fontSize: 'x-large', textAlign: 'center' }}
-              >
-                Express
-              </ListGroup.Item>
-              <ListGroup.Item
-                style={{ fontSize: 'x-large', textAlign: 'center' }}
-              >
-                ReactJS
-              </ListGroup.Item>
-              <ListGroup.Item
-                style={{ fontSize: 'x-large', textAlign: 'center' }}
-              >
-                Node.js
-              </ListGroup.Item>
-            </ListGroup>
-          </Card>
+                <ListGroup.Item style={{ textAlign: 'center' }}>
+                  ReactJS
+                </ListGroup.Item>
+                <ListGroup.Item style={{ textAlign: 'center' }}>
+                  NodeJS
+                </ListGroup.Item>
+                <ListGroup.Item style={{ textAlign: 'center' }}>
+                  ExpressJS
+                </ListGroup.Item>
+                <ListGroup.Item style={{ textAlign: 'center' }}>
+                  MongoDB
+                </ListGroup.Item>
+                <ListGroup.Item style={{ textAlign: 'center' }}>
+                  Javascript / Typescript
+                </ListGroup.Item>
+                <ListGroup.Item style={{ textAlign: 'center' }}>
+                  CSS
+                </ListGroup.Item>
+                <ListGroup.Item style={{ textAlign: 'center' }}>
+                  HTML
+                </ListGroup.Item>
+                <ListGroup.Item style={{ textAlign: 'center' }}>
+                  Vue.js
+                </ListGroup.Item>
+                <ListGroup.Item style={{ textAlign: 'center' }}>
+                  C#
+                </ListGroup.Item>
+                <ListGroup.Item style={{ textAlign: 'center' }}>
+                  .NET
+                </ListGroup.Item>
+                <ListGroup.Item style={{ textAlign: 'center' }}>
+                  SQL
+                </ListGroup.Item>
+              </ListGroup>
+            </Card>
+          </div>
           <h3 className='header-text' style={{ margin: '20px 0 10px' }}>
             Other Skills + Tools
           </h3>
@@ -132,7 +149,7 @@ function Home() {
                   Formik
                 </ListGroup.Item>
                 <ListGroup.Item style={{ textAlign: 'center' }}>
-                  Git/GitHub
+                  Git
                 </ListGroup.Item>
                 <ListGroup.Item style={{ textAlign: 'center' }}>
                   GraphQL
