@@ -6,6 +6,10 @@ import Bio from './Bio';
 
 function Home() {
 
+  const text = "I am a Full Stack Developer with a background in education and school leadership. ";
+  const currently = "I work as a software engineer at ";
+  const orgLink = {name: "HMH.", link: "https://www.hmhco.com/"};
+
   const articles = [
     {
       title: '10 Essential Patterns for C# and .NET Development',
@@ -32,31 +36,19 @@ function Home() {
         <div className='header-container'>
           {/* <img className='image' src='./desk_photo.jpg' alt='Emily at desk' /> */}
           <Image fluid rounded src="/desk_photo.jpg" alt="Emily at desk" />
+          <div>
           <h1 className='name-header'>Emily Lubkert, Full Stack Developer</h1>
+          <p className='bio-text' style={{textAlign: 'center', padding: '0 5%'}}>{text}{currently}<a style={{display: 'inline', padding: 0}} href={orgLink.link} target='_blank'>{orgLink.name}</a></p>
+          </div>
         </div>
         <div
           className='col-lg-6 col-md-8 mx-auto'
           style={{ display: 'flex', alignItems: 'center' }}
         >
-          <div style={{ marginTop: '5rem' }}>
+          <div>
             <Card
               style={{
-                textAlign: 'center',
-                fontSize: 'x-large',
-                background: 'none',
-                border: 'none',
-              }}
-            >
-              <Card.Body>
-                <Card.Title>Welcome!</Card.Title>
-                I'm so glad you're here! <br />
-                Check out my projects to see my skills in action. <br />
-                Contact me and let me know what you think.
-              </Card.Body>
-            </Card>
-            <Card
-              style={{
-                marginTop: '3rem',
+                // marginTop: '6rem',
                 textAlign: 'center',
                 fontSize: 'large',
                 background: 'none',
@@ -183,21 +175,21 @@ function Home() {
       <div className='row py-lg-5'>
         <h1 className='header-text'>My Projects</h1>
         <ProjectCard
-          image='./oinc-logo.png'
+          image1='./home-page-blur.png'
+          image2='./college-search-blur.png'
+          title='NWEA Futures Tool'
+          description="A functional prototype for an updated redesign on NWEA's College Explorer Tool with increased personalization, accessibility, and beauty. Due to privacy reasons, I cannot share more details or code for this project, but I would be happy to tell you more about it! "
+        />
+        <ProjectCard
+          image1='./oinc-logo.png'
           title='OIN¢'
           description='OIN¢ is a full stack money tracking app that kids and their parents can use to keep track of the money coming in and out.'
           launchlink='https://emily-lubkert-fullstackbankapp.herokuapp.com/'
           githublink='https://github.com/emilylubkert/Oinc-Full-Stack-Banking-App'
         />
+
         <ProjectCard
-          image='./bustracker.jpeg'
-          title='Real-Time Bus Tracker'
-          description='Real-time transit data from the MBTA is shown on a map of Boston. Users can input a bus route and view the current location of each active bus on that route, updated every 5 seconds.'
-          launchlink='https://emilylubkert.github.io/Real-Time-Bus-Tracker/'
-          githublink='https://github.com/emilylubkert/Real-Time-Bus-Tracker'
-        />
-        <ProjectCard
-          image='./rest-app.png'
+          image1='./rest-app.png'
           title='Full Stack Restaurant App'
           description='A mock restaurant ordering app built with NextJS, Stripe, and Strapi. A user can log in, add items from 3 different restaurants to a cart, and order with Stripe using test payment settings/information.'
           githublink='https://github.com/emilylubkert/full-stack-restaurant-app'

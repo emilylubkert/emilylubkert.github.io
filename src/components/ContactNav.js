@@ -1,4 +1,3 @@
-
 import { Navbar, Container, Offcanvas, Nav } from 'react-bootstrap';
 
 import '../styles.css';
@@ -20,7 +19,7 @@ function ContactNav() {
         <Offcanvas.Header closeButton>
           <Offcanvas.Title id="offcanvasNavbarLabel">Hi!</Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body>
+        <Offcanvas.Body >
           <Nav className="justify-content-end flex-grow-1 pe-3">
             <Nav.Link className="contact-link" href="https://github.com/emilylubkert">Find Me on Github</Nav.Link>
             <Nav.Link className="contact-link"href="https://www.linkedin.com/in/emilylubkert/">Connect on LinkedIn</Nav.Link>
