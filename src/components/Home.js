@@ -12,16 +12,15 @@ function Home() {
 
   const articles = [
     {
-      title: '10 Essential Patterns for C# and .NET Development',
-      url: 'https://maherz.medium.com/10-essential-patterns-for-c-and-net-development-e9b881b9a6ba#id_token=eyJhbGciOiJSUzI1NiIsImtpZCI6ImFjZGEzNjBmYjM2Y2QxNWZmODNhZjgzZTE3M2Y0N2ZmYzM2ZDExMWMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJuYmYiOjE2ODExNjA3MzIsImF1ZCI6IjIxNjI5NjAzNTgzNC1rMWs2cWUwNjBzMnRwMmEyamFtNGxqZGNtczAwc3R0Zy5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsInN1YiI6IjExNzQ0ODM1OTU0ODM2OTgxODcwNyIsImVtYWlsIjoiZWx1YmtlcnRAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF6cCI6IjIxNjI5NjAzNTgzNC1rMWs2cWUwNjBzMnRwMmEyamFtNGxqZGNtczAwc3R0Zy5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsIm5hbWUiOiJFbWlseSBMdWJrZXJ0IiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FHTm15eGFyQV9TZTM4S1JGWGVxQU1qa3VxbngyVGVwaDI1QjNEbFFUMHhjZHc9czk2LWMiLCJnaXZlbl9uYW1lIjoiRW1pbHkiLCJmYW1pbHlfbmFtZSI6Ikx1YmtlcnQiLCJpYXQiOjE2ODExNjEwMzIsImV4cCI6MTY4MTE2NDYzMiwianRpIjoiYTNiY2E2NmUwZjFhNWQ3Y2I1M2QyNmRkYzFkZWFiODFiOTJjYzQ0ZSJ9.EzG_XBzhzMqvvGMi_-XEosHg59fCQrJ-F_CUVKu0MG_xp_Ci0QbYUUzvcjSyLdxsYdg4avLLG7Xr9qjrBqwKzsV1wvPpeHc0UDUXiOXIeWxiqUPLVdTY59h4r51B-2SHP_KEaauMthc6VLSJo6GDbayOpFmZzeTcijhDms78c3-Tc1Yu4K1oc0jHca_ORs85JvUW1uYHnwB_RB5FirPTDgh89nTASDi3HKzZh7QGOs9pY06zidfvw8G39jfIKYbu8EnS3WsWh5TfneuLjoQN4lDY8yEienLtQcohPrZQXrY3vKB-NEGdxiLH1KD0Fhr3T6xEhBzirVlTnvY5b05KCA'
+      title: " 'Building Meta’s Threads App' (and more from The Pragmatic Engineer!)",
+      url: 'https://newsletter.pragmaticengineer.com/p/building-the-threads-app'},
+    {
+      title: 'The Role of AI in Software Engineering in 2023',
+      url: 'https://medium.com/tech-lead-hub/the-role-of-ai-in-software-engineering-in-2023-where-is-the-tech-industry-heading-87185022dffa'
     },
     {
-      title: 'Advice From a Software Engineer With 8 Years of Experience',
-      url: 'https://medium.com/better-programming/advices-from-a-software-engineer-with-8-years-of-experience-8df5111d4d55'
-    },
-    {
-      title: 'Why I work remotely (hint: it has nothing to do with productivity).',
-      url: 'https://medium.com/signal-v-noise/why-i-work-remotely-hint-it-has-nothing-to-do-with-productivity-34ace30f74fc'
+      title: 'Create React App is out, these are the tools you need to switch to now',
+      url: 'https://medium.com/coding-beauty/create-react-app-alternatives-f4b65322acab'
     }
   ]
   const date = new Date();
